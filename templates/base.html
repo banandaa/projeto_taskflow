@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+
+    <style>
+        body { font-family: Constantia, sans-serif; margin: 0; padding: 0; background-color: #f183b5; }
+        header { background-color: #ffffff; color: rgb(10 102 168 / 0.93); padding: 30px 45px; }
+        h5{ background-color: dodgerblue; padding: 5px 5px; margin-block: 0.5px }
+        nav a { color: #000000; text-decoration: #171616; margin-right: 10px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 30px; max-width: 900px; margin: 0 auto; background: #ffffff; margin-top: 30px; border-radius: 20px; }
+        footer { text-align: center; padding: 15px; color: #ff3149; font-size: 0.9em; margin-top: 30px; }
+        card { border: 1px solid #040000; padding: 15px; border-radius: 6px; margin-bottom: 10px;}
+
+
+    </style>
+
+</head>
+<body>
+
+
+
+<header>
+
+    <h1 style="margin:0 0 20px 0; font-size: 30px; font-family: initial " >TaskFlow Corp | Gestão Interna</h1>
+
+    <nav>
+        <a href="{{url_for('index')}}">Início</a>
+
+        <a href="{{url_for('criar_atividade')}}">criar atividade</a>
+
+        <a href="{{url_for('listar_atividade')}}">listar atividade</a>
+
+        <a href="{{url_for('pessoa')}}">pessoa</a>
+
+    </nav>
+</header>
+<h5 style="color: dodgerblue"> qis </h5>
+
+
+<main>
+    {% block conteudo  %}
+    {% endblock conteudo %}
+</main>
+
+
+</body>
+</html>

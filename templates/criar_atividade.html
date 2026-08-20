@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block conteudo  %}
+
+<form action="{{url_for('criar_atividade')}}" method="post">
+
+<center><h1 style = "color: #eeef00 " style = "font-family: "> Criar Atividade </h1></center>
+
+<label style = "color: black">
+        Complete os campos obrigatórios para cadastrar uma atividade ⬇
+</label>
+
+<br>
+<br>
+
+
+<label style = "color: black">
+
+        Nome da Atividade:
+        <input name="form_nome" type="text" placeholder="Cadastre Atividade" required>
+
+</label>
+
+<br>
+<br>
+
+<label style = "color: black">
+
+        Descrição: <br>
+
+        <textarea name= "form_descricao" rows="10" cols="50" placeholder="Digite a descrição da Atividade " required></textarea>
+<center>
+             <img src="https://www.pngmart.com/files/23/My-Melody-PNG-Picture.png" alt="Minha Foto" width="180" align ="right">
+</center>
+
+</label>
+
+<br>
+<br>
+
+<label style="color: black">
+
+        Data prescrita:
+        <input name="form_data" type="date"  required>
+
+</label>
+
+<br>
+<br>
+    <label>
+        Prioridade da Atividade <br>
+    </label>
+
+    <label>
+    <input name=" form_prio " value="1" type="radio">
+    Alta
+    </label>
+
+    <label>
+        <input name="form_prio" velue="2" type="radio">
+     Média
+    </label>
+
+    <label>
+        <input name="form_prio" velue="3" type="radio">
+     Baixa
+    </label>
+
+    <br>
+    <br>
+
+
+
+<label style=" color: black">
+
+    Categoria da Atividade:
+
+</label>
+
+
+
+<label>
+    <input name="form_categoria" type="checkbox" value="reuni"> Reunião
+
+</label>
+
+
+<label>
+    <input name="form_categoria" type="checkbox" value="juri"> Jurídico
+
+</label>
+
+<label>
+
+    <input name="form_categoria" type="checkbox" value="pale">Palestra
+
+</label>
+
+<label>
+    <input name="form_categoria" type="checkbox" value="lazer"> Lazer
+
+</label>
+
+<br>
+<br>
+
+<button style = "background-color: #ef2b8f " style = "color: black " type="submit">Criar</button>
+   <button style ="background-color: #ef2b8f " style =  "color: black" type="submit">Limpar</button>
+
+</form>
+
+{{dados_atividade}}
+
+{% for atividade in dados_atividade %}
+{{atividade.nome}}<br>
+{{atividade.descricao}}<br>
+{{atividade.data}}<br>
+{{atividade.categoria}}<br>
+{% endfor %}<br>
+
+{% endblock conteudo %}
