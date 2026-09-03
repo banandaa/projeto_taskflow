@@ -1,0 +1,48 @@
+body {
+    font-family: Constantia
+    sans-serif; margin: 0;
+    padding: 0;
+    background-color: #f183b5;
+}
+
+header {
+    background-image: url("https://i.pinimg.com/1200x/a9/af/8c/a9af8c2c6c51654066a96951c1a56b53.jpg") ;
+    background-size: cover;
+    background-color: #ffffff;
+    color: rgb(10 102 168 / 0.93);
+    padding: 30px 45px;
+}
+h5 {
+    background-color: dodgerblue;
+    padding: 5px 5px;
+    margin-block: 0.5px
+}
+
+nav a {
+    color: #000000;
+    text-decoration: #171616;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+
+
+card {
+    border: 1px solid #040000;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
