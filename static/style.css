@@ -2,27 +2,47 @@ body {
     font-family: Constantia
     sans-serif; margin: 0;
     padding: 0;
-    background-color: #f183b5;
+    background-color: rgb(215 237 253 / 0.24);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+h1{
+    style="margin:0 0 20px 0;
+    font-size: 30px;
+    text-align: center;
+    color: #283a55;
+
+
 }
 
 header {
     background-image: url("https://i.pinimg.com/1200x/a9/af/8c/a9af8c2c6c51654066a96951c1a56b53.jpg") ;
     background-size: cover;
-    background-color: #ffffff;
-    color: rgb(10 102 168 / 0.93);
-    padding: 30px 45px;
+    background-color: rgb(249 253 255 / 0.09);
+    padding: 40px 50px;
+    border-block-end: 2px solid black;
+
+
 }
 h5 {
-    background-color: dodgerblue;
-    padding: 5px 5px;
-    margin-block: 0.5px
+    background-color: rgb(255 255 255 / 0.44);
+    padding: 0px 0px 15px 2px;
+    margin-block: 0px;
+    border-block-end: 2px solid black;
 }
 
 nav a {
+    font-size: 16px;
+    text-align: center;
     color: #000000;
     text-decoration: #171616;
-    margin-right: 10px;
-    font-weight: bold;
+    margin-right: 35px;
+    font-weight: bolder;
+
 }
 
 nav a:hover {
@@ -30,19 +50,45 @@ nav a:hover {
 }
 
 main {
-    padding: 30px;
-    max-width: 900px;
-    margin: 0 auto;
-    background: #ffffff;
+    padding: 0px;
+    max-width: 700px;
+    margin: 0 auto ;
+    background: rgb(199 230 251 / 0.34);
     margin-top: 30px;
-    border-radius: 20px;
+    ALIGN-ITEMS: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
-
-
 
 card {
     border: 1px solid #040000;
     padding: 15px;
     border-radius: 6px;
     margin-bottom: 10px;
+}
+
+.titulo_listar{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+    color: #283a55;
+}
+
+.atividades{
+    width: 250px;
+    height: auto;
+    background: rgb(186 229 255 / 0.66);
+    border: 3px solid rgb(31 62 147 / 0.4);
+    border-radius: 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+}
+
+.pai_listar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }

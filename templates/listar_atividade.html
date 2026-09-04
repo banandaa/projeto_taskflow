@@ -1,17 +1,28 @@
 {% extends 'base.html' %}
-
 {% block conteudo  %}
 
-<h1>listar atividade</h1>
+<h1 class="titulo_listar" style = "color: #20447799" >
+     𝐋𝐢𝐬𝐭𝐚𝐫 𝐚𝐭𝐢𝐯𝐢𝐝𝐚𝐝𝐞
+</h1>
 
-{{dados_atividade}}
-
+</>
+<div class="pai_listar">
 {% for atividade in dados_atividade %}
-{{atividade.nome}}<br>
-{{atividade.descricao}}<br>
-{{atividade.data}}<br>
-{{atividade.categoria}}<br>
+
+<div class="atividades">
+    <p> Nome da Atividade: </p>
+    {{atividade.nome}}
+    <p>Descrição:</p>
+    {{atividade.descricao}}
+    <p>Data:</p>
+    {{atividade.data}}
+    <p>Categoria:</p>
+    {{atividade.categoria}}
+
+</div>
+
 {% endfor %}<br>
+</div>
 
 {% endblock conteudo %}
 

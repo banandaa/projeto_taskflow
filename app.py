@@ -23,10 +23,10 @@ def index():
 def criar_atividade():
     if request.method == 'POST':
         #aqui recebe dados do formulário
-        nome_atividade = request.form.getlist('form_nome')
-        data_atividade = request.form.getlist('form_data')
-        descricao_atividade = request.form.getlist('form_descricao')
-        categoria_atividade = request.form.getlist('form_categoria')
+        nome_atividade = request.form.get('form_nome')
+        data_atividade = request.form.get('form_data')
+        descricao_atividade = request.form.get('form_descricao')
+        categoria_atividade = request.form.get('form_categoria')
         prioridade_atividade = request.form.getlist('form_prio')
 
         dados = {
