@@ -8,27 +8,17 @@
 </head>
 <body>
 
-<header>
+<div class="fundo_titulo_principal">
 
-    <h1
-            style="margin:0 0 20px 0;
-            font-size: 30px;
-            text-align: center;
-            color: #283a55;
-            font-family:"" > 𝓣𝓪𝓼𝓴𝓕𝓵𝓸𝔀 𝓒𝓸𝓻𝓹 | 𝓖𝓮𝓼𝓽ã𝓸 𝓘𝓷𝓽𝓮𝓻𝓷𝓪
+    <div class="titulo_principal">
+        𝓣𝓪𝓼𝓴𝓕𝓵𝓸𝔀 𝓒𝓸𝓻𝓹 | 𝓖𝓮𝓼𝓽ã𝓸 𝓘𝓷𝓽𝓮𝓻𝓷𝓪
+    </div>
 
-
-    </h1>
-
-
-
-</header>
-
-
+</div>
 
 <h5 style="color: rgb(211 231 251 / 0)"> qis
 
-<nav>
+<div class="navegador">
         <a href="{{url_for('index')}}">Início</a>
 
         <a href="{{url_for('criar_atividade')}}">Criar atividade</a>
@@ -37,16 +27,16 @@
 
         <a href="{{url_for('pessoa')}}">Pessoa</a>
 
-    </nav>
+</div>
 
 </h5>
 
 
-<main>
+<div class="conteudo">
     {% block conteudo  %}
 
     {% endblock conteudo %}
-</main>
+</div>
 
 
 </body>
