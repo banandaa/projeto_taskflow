@@ -1,9 +1,10 @@
 body {
     font-family: Constantia;
-    background-color: rgb(199 230 251 / 0.19);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url("https://i.pinimg.com/1200x/7c/4a/ac/7c4aacc02615a575ab980749c120a972.jpg");
+
 }
 
 .titulo_principal{
@@ -13,24 +14,55 @@ body {
 }
 
 .fundo_titulo_principal {
-    background-image: url("https://i.pinimg.com/1200x/a9/af/8c/a9af8c2c6c51654066a96951c1a56b53.jpg") ;
+    background-image: url("https://i.pinimg.com/1200x/5f/f8/ef/5ff8efcc09e0fbc43739c4b32ae6b235.jpg") ;
     background-size: cover;
     padding: 40px 50px;
     border-block-end: 2px solid black;
     text-align: center;
 }
 
+h1{
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.div_card{
+    width: auto;
+    height: auto;
+    margin: 10px 10px;
+    background-color: #aadcff;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: -50px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.div_img img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: -100px;
+}
+
+
+
 h5 {
     padding: 0px 0px 15px 2px;
     margin-block: 0px;
     border-block-end: 2px solid black;
     text-align: center;
+    background-color: whitesmoke;
 }
 
 .navegador a {
     font-size: 16px;
     color: #000000;
-    text-decoration: #171616;
     margin-right: 35px;
     font-weight: bolder;
 }
@@ -44,12 +76,13 @@ h5 {
     max-width: 800px;
     height: auto;
     margin: 0 auto;
-    background: #CEEBFD5C;
+    background: rgb(255 255 255);
     margin-top: 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    border: 2px solid black;
 }
 
 .titulo_listar{
@@ -61,7 +94,7 @@ h5 {
 .atividades{
     width: 250px;
     height: auto;
-    background: #BAE5FFA8;
+    background: rgb(190 231 255 / 0.53);
     border: 3px solid rgb(31 62 147 / 0.4);
     border-radius: 5px;
     margin: 5px 5px 5px 5px;
