@@ -4,6 +4,8 @@
 
 from flask import Flask, render_template, request
 
+from models import Pessoa
+
 ###################################################################################################
 # criar objeto flask "apelido - app"
 app = Flask(__name__)
@@ -42,8 +44,6 @@ def criar_atividade():
         print(f'base_fake: {base_fake}')
         return render_template('listar_atividade.html', dados_atividade = base_fake)
 
-
-
     return render_template('criar_atividade.html')
 
 @app.route('/atividades/listar')
@@ -53,6 +53,16 @@ def listar_atividade():
 @app.route('/pessoa')
 def pessoa():
     return render_template('pessoa.html')
+
+@app.route('/criar_pessoa', methods=['GET', 'POST'])
+def criar_pessoa():
+    if request.method == 'GET':
+        return render_template('criar_pessoa.html')
+    nome_form = request.form.get('form_nome')
+    email_form = request.form.get('form_email')
+    senha_form = request.form.get('form_senha')
+    print(f'nome: {nome}, email: {email}, senha: {senha}')
+    nova_pessoa = Pessoa(nome=nome_form, email=email_form, senha_hash=senha_form)
 
 ###################################################################################################
 # iniciar aplicação web

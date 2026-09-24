@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block conteudo  %}
+
+<h1 style = "color: #20447799">Cadastro de Usuários</h1>
+
+<form action="{{url_for('criar_pessoa')}}" method="post">
+
+
+<label style = "color: black">
+        Complete os campos obrigatórios para o cadastro de usuários ⬇
+</label>
+
+<br>
+<br>
+
+
+<label style = "color: black">
+
+        Nome do Usuário:
+        <input name="form_nome" type="text" placeholder="Digite o nome completo" required>
+
+</label>
+
+<br>
+<br>
+
+<label style = "color: black">
+
+        Email: <br>
+
+        <input name= "form_email" type= "text" placeholder="Digite seu email" required>
+
+</label>
+
+<br>
+<br>
+
+<label style="color: black">
+
+        Senha:
+        <input name="form_senha" type="text" required>
+
+</label>
+
+<br>
+<br>
+
+<button style = "background-color: rgb(32 91 135 / 0.47) " style = "color: black " type="submit">Criar</button>
+    <button style ="background-color: rgb(32 91 135 / 0.47) " style =  "color: black" type="submit">Limpar</button>
+
+</form>
+
+{{criar_pessoa}}
+
+{% for pessoa in criar_pessoa %}
+{{}}<br>
+{{}}<br>
+{{}}<br>
+{{}}<br>
+{% endfor %}<br>
+
+{% endblock conteudo %}

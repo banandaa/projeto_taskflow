@@ -33,8 +33,7 @@ h1{
     width: auto;
     height: auto;
     margin: 10px 10px;
-    background-color: #aadcff;
-    border-radius: 10px;
+    background-color: #dff5ff;
     padding: 5px;
     font-size: 20px;
     margin-top: -50px;
@@ -47,9 +46,8 @@ h1{
     height: 200px;
     overflow: hidden;
     object-fit: cover;
-    margin-top: -100px;
-}
 
+}
 
 
 h5 {
