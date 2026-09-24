@@ -31,6 +31,12 @@
 
 </h5>
 
+{% for mensagem in get_flashed_messages() %}
+
+    {{mensagem}}
+
+{% endfor %}
+
 
 <div class="conteudo">
     {% block conteudo  %}
